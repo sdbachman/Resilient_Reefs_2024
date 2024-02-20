@@ -1,0 +1,11 @@
+
+      !-----------------------------------------------------------
+      ! User inputs for random output module
+      !
+      logical,public,parameter :: do_random = .true.
+      real   ,parameter :: output_period =  3600    ! in seconds
+      !real   ,parameter :: output_period2 = 24*3600 ! in seconds
+      integer,parameter :: nrpf   = 24              ! number of frames per file
+      !integer,parameter :: nrpf2  =  7              ! number of frames per file
+      !
+      !-----------------------------------------------------------

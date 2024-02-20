@@ -1,0 +1,66 @@
+/* This is "cppdefs.opt": MODEL CONFIGURATION FILE
+   ==== == ============ ===== ============= ==== */
+
+/*
+ * CHOOSE ONLY ONE PRIMARY FLAG FOR SWITCH LIST BELOW
+ */
+
+#define TWAKE
+
+#if defined TWAKE
+
+# define DIAGNOSTICS
+# define TIDES
+# define BULK_FRC
+# undef SPONGE_TUNE
+c-# define RIVER_SOURCE
+c-# define EXTRACT_DATA
+
+c-# define MLCONV
+c-# define ADV_ISONEUTRAL
+
+#  define SOLVE3D
+#  define UV_COR
+#  define UV_ADV
+
+#  define CURVGRID
+#  define SPHERICAL
+#  define MASKING
+
+#  define SALINITY
+#  define NONLIN_EOS
+#  define SPLIT_EOS
+
+# define EXACT_RESTART
+# define IMPLICIT_BOTTOM_DRAG
+
+#  define UV_VIS2
+#  define TS_DIF2
+
+#  define LMD_MIXING
+#  define LMD_KPP
+#  define LMD_BKPP
+#  define LMD_RIMIX
+#  define LMD_CONVEC
+#  define LMD_NONLOCAL
+
+#  define OBC_WEST
+#  define OBC_EAST
+#  define OBC_NORTH
+#  define OBC_SOUTH
+
+#  define OBC_M2FLATHER
+#  define OBC_M3ORLANSKI
+#  define OBC_TORLANSKI
+
+#  define Z_FRC_BRY
+#  define M2_FRC_BRY
+#  define M3_FRC_BRY
+#  define T_FRC_BRY
+#  define SPONGE
+
+#endif
+
+
+#include "set_global_definitions.h"
+
